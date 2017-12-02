@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="?android:attr/actionBarSize"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   <!-- *** text field *** -->
+   <EditText
+       android:id="@+id/et0"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"
+       android:background="@color/light"
+       android:padding="10dp"
+       android:layout_margin="5dp"
+       android:inputType="text"/>
+
+    <!-- ************** Button Row A ************** -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButton1"
+            android:text="TXT" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onButton2"
+            android:text="START" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:onClick="onButton3" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EMAIL"
+            android:onClick="onButton4" />
+
+    </LinearLayout>
+    <!-- ************** /Button Row A ************** -->
+
+
+
+
+    <!-- ************** Counters Table ************** -->
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- *** counter labels *** -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/wifi_ctr_label"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:fontFamily="monospace"
+                android:text="WIFI" />
+
+            <TextView
+                android:id="@+id/ble_ctr_label"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:fontFamily="monospace"
+                android:text="BLE" />
+
+        </TableRow>
+
+        <!-- *** counter values *** -->
+        <TableRow>
+
+            <TextView
+                android:id="@+id/wifi_ctr"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#00ff00"
+                android:textSize="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#000000"
+                android:fontFamily="monospace"
+                android:text="   0" />
+
+            <TextView
+                android:id="@+id/ble_ctr"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#00ff00"
+                android:textSize="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="#000000"
+                android:fontFamily="monospace"
+                android:text="   0" />
+
+        </TableRow>
+    </TableLayout>
+
+
+    <!-- ***** Status Text ***** -->
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/status_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:background="#000000"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:text="X" />
+
+
+
+
+
+    <!-- ************** Path label + text ***************** -->
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/path_label"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:fontFamily="monospace"
+        android:text="PATH" />
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/bottomText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="@color/red"
+        android:textSize="16dp"
+        android:fontFamily="monospace"
+        android:text="xx" />
+
+
+</LinearLayout>
